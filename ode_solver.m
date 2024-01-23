@@ -1,4 +1,4 @@
-function [u] = solve_sys(n,epsilon)
+function [u] = ode_solver(n,epsilon)
     h = 1 / n; % Grid size
     a1 = -epsilon/h^2 + 1/(2*h); % Coefficient for the super-diagonal
     a2 = 2*epsilon/h^2; % Coefficient for the main diagonal
